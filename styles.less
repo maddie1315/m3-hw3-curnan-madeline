@@ -1,12 +1,56 @@
 @import "./variables.less";
 
-p {
-    .main-font();
+body, html {
+    padding: 0;
+    margin: 0;
 }
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 15vh;
+    background-color: @yellow;
+    margin: 0;
+    li {
+        .main-font();
+        list-style-type: none;
+        padding-right: 5%;
+    }
+}
+
+.banner {
+    background-image: url("./img/banner-bg.jpg"), linear-gradient(rgba(59, 56, 56, .33), rgba(59, 56, 56, .33));
+    background-blend-mode: overlay;
+}
+
+
+h2 {
+    font-family: @font;
+    font-size: 30px;
+    text-transform: uppercase;
+    .heading-span {
+        color: @red;
+    }
+    .heading-lowercase {
+        text-transform: lowercase;
+    }
+}
+
+p {
+    font-family: @font;
+}
+
+.gray-article {
+    background-color: lightgray;
+}
+
 
 button {
     .buttons();
     .main-font();
+    text-transform: uppercase;
 }
 
 footer {

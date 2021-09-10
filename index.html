@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="">
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <title>Bob's Burgers</title>
@@ -15,17 +18,19 @@
       <li>Home</li>
       <li>Menu</li>
       <li>About Us</li>
-      <li>Order Now</li>
+      <li class="order-now">Order Now</li>
     </ul>
+  
+    <div class="banner">
+      <!--<h1>Bob's Burgers</h1>-->
+      <img src="img/logo.png" alt="Bob's Burgers Logo" class="logo">
 
-    <img src="img/banner-bg.jpg" alt="Bob's Burgers Banner Image">
+      <button>Order Now</button>
 
-    <h1>Bob's Burgers</h1>
-
-    <button>Order Now</button>
+    </div>    
 
     <article>
-      <h2>World's Best Burgers</h2>
+      <h2>World's Best <span class="heading-span">Burgers</span></h2>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
 
@@ -34,10 +39,10 @@
       <img src="img/bobs-burger.png" alt="Burger Image">
     </article>
 
-    <article>
+    <article class="gray-article">
       <img src="img/bob-headshot.png" alt="Headshot of Bob">
 
-      <h2>Dine-in or Take-out</h2>
+      <h2>Dine-in <span class="heading-lowercase">or</span> <span class="heading-span">Take-Out</span></h2>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
 
