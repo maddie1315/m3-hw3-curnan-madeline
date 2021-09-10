@@ -18,11 +18,23 @@ ul {
         list-style-type: none;
         padding-right: 5%;
     }
+    .order-now {
+        color: @red;
+        text-transform: uppercase;
+    }
 }
 
 .banner {
     background-image: url("./img/banner-bg.jpg"), linear-gradient(rgba(59, 56, 56, .33), rgba(59, 56, 56, .33));
     background-blend-mode: overlay;
+    height: 65vh;
+    img, button{
+        display: block;
+        margin: auto;
+    }
+    .logo {
+        padding: 5%;
+    }
 }
 
 
@@ -40,12 +52,24 @@ h2 {
 
 p {
     font-family: @font;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.article-content {
+    max-width: 58vw;
+}
+
+article {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding: 5%;
 }
 
 .gray-article {
     background-color: lightgray;
 }
-
 
 button {
     .buttons();
@@ -53,6 +77,17 @@ button {
     text-transform: uppercase;
 }
 
+.spacer {
+    height: 10px;
+    background-color: @yellow;
+}
+
 footer {
     background-color: @black;
+    img {
+        max-width: 25%;
+        display: block;
+        padding: 2%;
+        margin: auto;
+    }
 }
